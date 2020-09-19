@@ -1,4 +1,4 @@
-package com.sanix.SpringSecurity2;
+package com.sanix.SpringSecurity2.Student;
 
 public class Student {
 
