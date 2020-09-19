@@ -9,6 +9,8 @@ public class ApplicationSecurityConfig extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity http) throws Exception{
         http
                 .authorizeRequests()//Authorize request
+                .antMatchers("/", "index", "/css/*", "/js/*")
+                .permitAll()//Permit all
                 .anyRequest()//Any request
                 .authenticated()//must be authenticated
                 .and()
